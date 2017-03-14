@@ -1,0 +1,10 @@
+colnames(movies) <- c("Film","Genre","Rotten Rating",
+                      "Audience Rating","Budget. Million","Release Year")
+colnames(movies)
+summary(movies)
+
+# convert non factor to  factor - Year currently treated as numeric..
+#converting to factor
+
+movies$`Release Year` <-  factor(movies$`Release Year`)
+summary(movies)
