@@ -62,7 +62,7 @@ plot1960 <- qplot(data=merged1960, x=Fertility.Rate, y=Life.Exp,
       main  ="Life Expectancy vs Fertility (1960)" #title
    )
 
-jpeg("plot1960.jpg")
+png(file="plot1960.png",res=300,width=7,height=7,units = "in")
 plot(plot1960)
 dev.off()
 
@@ -77,6 +77,9 @@ plot2013 <- qplot(data=merged2013, x=Fertility.Rate, y=Life.Exp,
 pdf("plot2013.pdf")
 plot(plot2013)
 dev.off()
+
+
+
 
 
 
